@@ -4,6 +4,9 @@ sudo apt update
 # Install paket yg dibutuhkan
 sudo apt install tar gzip -y
 
+# Download golang
+wget https://go.dev/dl/go1.23.6.linux-amd64.tar.gz
+
 # Menghapus instalasi golang yang lama, lalu menginstall yang terbaru
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.6.linux-amd64.tar.gz
 
