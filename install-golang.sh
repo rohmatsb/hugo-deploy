@@ -5,10 +5,10 @@ sudo apt update
 sudo apt install tar gzip -y
 
 # Download golang
-wget https://go.dev/dl/go1.23.6.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.24.0.linux-amd64.tar.gz
 
 # Menghapus instalasi golang yang lama, lalu menginstall yang terbaru
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.6.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.24.0.linux-amd64.tar.gz
 
 # Menambahkan path ke $HOME/.profile dan /etc/profile
 sudo echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.profile
